@@ -2,20 +2,59 @@
 <html>   
     <head>
         <meta charset="utf-8">
-    </head>
-    <body>   
         <style>
-            a {
-                color: red;
-                text-decoration: underline;
+            /* block level element(tag) -화면 전체 */
+            h1, a {/* 같이 쓰면 편함  */
+                padding: 20px;
+                border: 15px green solid; 
+                margin: 15px;
+                width: 300px;
+            }
+            span {
+                border: 5px solid gray;
+                /* padding: 10px; */
+            }
+            div {
+                border: 5px solid gray;
+                /* padding: 10px; */
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr; 
             }
         </style> 
-        <a>1</a> <br>
-        <a style ="color: blue">2</a>
+    </head>
+    <body>
+        <!-- 그리드! -->
+        <!-- <div> : 아무 의미 없는 tag (block) -->
+        <!-- <span> : 아무 의미 없는 tag (inline) -->
+        <div id='grid'>
+            <div>navigation</div>
+            <div>article</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <a style ="color: blue">2</a> -->
         <!-- <a href = "writing.pdf">pdf</a> -->
         <!-- <br> <br> <br> <br> <br> -->
         <!-- <embed src="writing.pdf" width="500" height="375" type="application/pdf"> -->
-        <iframe src="https://drive.google.com/file/d/105YO6EaVBEo9TyY4EGEtnyM_fnrR7x7F/preview" width="640" height="480"></iframe>
+        <!-- <iframe src="https://drive.google.com/file/d/105YO6EaVBEo9TyY4EGEtnyM_fnrR7x7F/preview" width="640" height="480"></iframe> -->
 
         <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/U_85TaXbeIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 

@@ -3,6 +3,7 @@
 <html>   
     <head>
         <meta charset="utf-8">
+        <title></title>
     </head>
     <body>
     </body>
@@ -37,33 +38,67 @@
         </script>
         <meta charset="utf-8">
         <style>
-            #red { /* id선택자가 이긴다~ 구체적인것이 더 강함 */
-                color: red;
-            }
-            .saw { /* class는 중간 */
-                color:aqua;
-            }
-            ul { /* tag는 잣밥 가장 범용성이 높기 때문*/
-                text-align: center;
-                font-size: 30px;
-            }
             .small {
                 font-size: 15px;
+            }
+            .big {
+                font-size: 100px;
+            }
+            body:before {
+                margin: auto;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                display: block;
+                content: "";
+                width: 120%;
+                height: 10px;
+                background: #00d2ff;
+                background: -webkit-gradient(linear,left top,right top,from(#3a7bd5),to(#00d2ff));
+                background: linear-gradient(90deg,#3a7bd5,#00d2ff);
+            }
+            section {
+                padding: 0 2rem;
+            }
+            h1 {
+                margin: .67em 0;
+            }
+            body, html {
+                font-size: 32px;
+                word-break: keep-all;
+                font-family: Spoqa Han Sans, sans-serif;
+                letter-spacing: -.3px;
+                color: #222;
+                padding-bottom: 2rem;
+                overflow-x: hidden;
+                -webkit-font-smoothing: antialiased;
+            }
+            .container {
+                width: 100%;
+                max-width: 30rem;
+                margin: auto;
             }
         </style>
     </head>
     <body>
-        <title>My First Web</title>
-        <strong>Hello! My name is <u class="saw" id="red">JinHyeok Kim</u>. Welcome to my blog.</strong>
-        <br> <br> <br>
-        <ul><h1>
-            <li><a href = 계획.html>계-획</a></li>
-            <li><a href = "gratitude diary.html">gratitude diary </a></li>
-            <li><a href = "전공.html">전공</a></li>
-            <li><a href = "영어.html">영어</a></li>
+        <div class="container">
 
-            <li><a href = "test.html" class="small">test</a></li>
-        </ul> </h1>
+            <title>My First Web</title>
+            <section>
+                <h1>Hello! My name is JinHyeok Kim.<br> Welcome to my blog.</h1>
+            </section>
+            <ul>
+                <dif class='big'>
+                    <li><a href = 계획.html>계-획</a></li>
+                    <li><a href = "gratitude diary.html">gratitude diary </a></li>
+                    <li><a href = "전공.html">전공</a></li>
+                    <li><a href = "영어.html">영어</a></li>
+                </dif>
+                <dif class='small'>
+                    <li><a href = "test.html" class="small">test</a></li>
+                </dif>
+            </ul> 
+        </div>
     </body>
 </html>
 
